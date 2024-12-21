@@ -23,13 +23,10 @@ NO_DEFORMATION : False  # if True, we don't move vertices. ##TODO return this to
 USE_TARGET_IMAGE : False  # if true tries to render a given image instead of SDS. TODO return this to false
 OPTIMISE_TEXTURE_MAP : True  # if true, optimzes a texture map. Else uses per-vertex colors.
 LATENT_OPTIM : False  # if true, optimizes a 4 channel latent vector instead of a RGB texture map
-RENDERER_IMAGE_DIM : 512 #working was 64
 RANDOM_BACKGROUND : True # if true, uses a random background for the rendered image
 VISUALIZATION_FREQ : 200
 TILING_RENDER_FREQ : 200
-TEXTUAL_INVERSION : False # Use textual inversion
 PRETRAINED_MODEL_NAME_OR_PATH : "stabilityai/stable-diffusion-2-1-base"
-GUIDANCE : "SD" # "IF" or "SD" for DeepFloyd and Stable-Diffusion.
 GUIDANCE_SCALE : 100 #Parameter-free guidance parameter. High values (100) trade diversity for quality.
 ###optimization params
 N_STEPS : 7000  # optimization steps
@@ -42,7 +39,6 @@ USE_HSV: False
 
 BW: True
 GLOBAL_AFFINE: True
-CLIP_GRADIENTS_IN_SDS: True
 RANDOM_TILE_COLOR: True
 SIGMOID_WEIGHTS: True
 TILING_TYPE: "ProjectivePlane" #Cylinder, KleinBottle, MobiusStrip, OrbifoldI, OrbifoldIHybrid, OrbifoldII,OrbifoldIIHexagon,OrbifoldIIHybrid, OrbifoldIII, OrbifoldIV,OrbifoldIVHybrid, PinnedBoundary, ProjectivePlane, ReflectSquare, RightAngleHybrid, Torus, TorusHexagon
